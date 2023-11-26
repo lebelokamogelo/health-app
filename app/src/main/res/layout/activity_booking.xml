@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".screens.BookingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white">
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:background="@color/white"
+                android:contentDescription="arrow"
+                android:src="@drawable/arrow" />
+
+            <TextView
+                android:id="@+id/doctorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/poppins"
+                android:text="Appointment"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:fontFamily="@font/poppins"
+                android:padding="8dp"
+                android:text="Slots Available"
+                android:textAllCaps="true"
+                android:textColor="#474747"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/morning_slots_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <!-- Morning Slot 10h00 -->
+                <RadioButton
+                    android:id="@+id/radio_10h00"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:text="10h00"
+                    android:textColor="@drawable/radio_selected_slots_text_color"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <!-- Morning Slot 10h20 -->
+                <RadioButton
+                    android:id="@+id/radio_10h20"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:text="10h20"
+                    android:textColor="@drawable/radio_selected_slots_text_color"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <!-- Morning Slot 10h50 -->
+                <RadioButton
+                    android:id="@+id/radio_10h50"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:text="10h50"
+                    android:textColor="@drawable/radio_selected_slots_text_color"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+
+
+            <RadioGroup
+                android:id="@+id/afternoon_slots_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <!-- Afternoon Slot 14h00 -->
+                <RadioButton
+                    android:id="@+id/radio_14h00"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:text="14h00"
+                    android:textColor="@drawable/radio_selected_slots_text_color"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <!-- Afternoon Slot 14h20 -->
+                <RadioButton
+                    android:id="@+id/radio_14h20"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:text="14h20"
+                    android:textColor="@drawable/radio_selected_slots_text_color"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <!-- Afternoon Slot 14h50 -->
+                <RadioButton
+                    android:id="@+id/radio_14h50"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:text="14h50"
+                    android:textColor="@drawable/radio_selected_slots_text_color"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp">
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/book"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_selected"
+            android:fontFamily="@font/poppins"
+            android:paddingVertical="6dp"
+            android:text="Pay R200"
+            android:textAllCaps="false"
+            android:textSize="22sp" />
+
+    </FrameLayout>
+
+</RelativeLayout>

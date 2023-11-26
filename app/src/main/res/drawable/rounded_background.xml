@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/primary_opacity_20" /> <!-- Set the background color of the icon -->
+    <corners android:radius="20dp" /> <!-- Adjust the radius to control the rounding of corners -->
+</shape>

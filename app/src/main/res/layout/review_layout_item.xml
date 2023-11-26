@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingHorizontal="8dp">
+
+    <TextView
+        android:id="@+id/ReviewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text=""
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:id="@+id/ratingBarReview"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="8dp"
+        android:numStars="5"
+        android:rating="2.5"
+        android:stepSize="0.1"
+        android:theme="@style/CustomRatingBar" />
+
+    <TextView
+        android:id="@+id/ReviewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ReviewName"
+        android:fontFamily="@font/poppins"
+        android:text="I recently had the pleasure of being treated by doctor, and I couldn't be happier with the care I received."
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/ReviewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ReviewText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins"
+        android:text="20 Aug 2023"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/ReviewTime"
+        android:layout_marginTop="10dp"
+        android:background="@color/primary_opacity_20" />
+
+</RelativeLayout>

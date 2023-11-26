@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_unselected"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    tools:context=".fragments.BodyMassResultFragment">
+
+    <com.owl93.dpb.CircularProgressView
+        android:id="@+id/progress"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        app:animationInterpolator="decelerate"
+        app:drawTrack="true"
+        app:maxValue="60"
+        app:progress="30"
+        app:progressAnimationDuration="500"
+        app:strokeColor="@color/primary"
+        app:strokeWidth="6dp"
+        app:text="30"
+        app:textColor="@color/primary"
+        app:trackAlpha="30"
+        app:trackColor="@color/primary"
+        app:trackWidth="6dp" />
+
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins"
+        android:text="bmi"
+        android:textSize="20sp" />
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"
+    android:layout_marginVertical="3dp"
+    android:layout_marginEnd="8dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        app:cardCornerRadius="4dp">
+
+        <TextView
+            android:id="@+id/textViewChatMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/primary"
+            android:fontFamily="@font/poppins"
+            android:maxWidth="260dp"
+            android:paddingHorizontal="14dp"
+            android:paddingVertical="4dp"
+            android:text="Hello Doctor, how are you?"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textViewChatTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins"
+        android:text="12:34 PM"
+        android:textColor="#484848"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+

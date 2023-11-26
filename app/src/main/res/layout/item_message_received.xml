@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start"
+    android:layout_marginStart="8dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp">
+
+        <TextView
+            android:id="@+id/textViewChatMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@color/white"
+            android:fontFamily="@font/poppins"
+            android:maxWidth="260dp"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:text="I am good and how are you?"
+            android:textSize="18sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textViewChatTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins"
+        android:text="17:34 PM"
+        android:textColor="#484848"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HealthTheme">
+        <activity
+            android:name=".screens.EmergencyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.MenstrualCycleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.BreatheActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/bell_45" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/primary" />
+
+        <activity
+            android:name=".screens.SymptomsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.HeartRateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.RescheduleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.BodyMassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.DoctorDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.ReviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.BookingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".auth.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".auth.SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".auth.LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.App.Splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="YOUR_RAZORPAY_KEYS" />
+        <meta-data
+            android:name="com.google.gms.wallet.api.enabled"
+            android:value="true" />
+    </application>
+
+</manifest>

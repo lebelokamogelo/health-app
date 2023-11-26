@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Health App</string>
+    <string name="home"><font size="16">Home</font></string>
+    <string name="setting"><font size="16">Setting</font></string>
+    <string name="message"><font size="16">Message</font></string>
+    <string name="appointment"><font size="16">Appointment</font></string>
+    <string name="notification"><font size="16">Notification</font></string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

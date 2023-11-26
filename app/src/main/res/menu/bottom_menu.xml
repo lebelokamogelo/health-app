@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/home"
+        android:title="@string/home"
+        app:cnb_backgroundColor="@color/primary"
+        app:cnb_iconColor="@color/white" />
+
+    <item
+        android:id="@+id/appointment"
+        android:enabled="true"
+        android:icon="@drawable/calendar"
+        android:title="@string/appointment"
+        app:cnb_backgroundColor="@color/primary"
+        app:cnb_iconColor="@color/white" />
+
+    <item
+        android:id="@+id/messages"
+        android:enabled="true"
+        android:icon="@drawable/message"
+        android:title="@string/message"
+        app:cnb_backgroundColor="@color/primary"
+        app:cnb_iconColor="@color/white" />
+
+    <item
+        android:id="@+id/notification"
+        android:enabled="true"
+        android:icon="@drawable/bell"
+        android:title="@string/notification"
+        app:cnb_backgroundColor="@color/primary"
+        app:cnb_iconColor="@color/white" />
+
+    <item
+        android:id="@+id/settings"
+        android:enabled="true"
+        android:icon="@drawable/setting"
+        android:title="@string/setting"
+        app:cnb_backgroundColor="@color/primary"
+        app:cnb_iconColor="@color/white" />
+
+</menu>
